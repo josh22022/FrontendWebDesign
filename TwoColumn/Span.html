@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="zh-Hant-TW">
+
+<head>
+	<meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+        .wrap {
+            background-color: pink;
+            width: 500px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .fix-float {
+            display: block;
+            clear: both;
+        }
+
+        .navi, .main {
+            float: left;
+        }
+
+        .navi {
+            background-color: yellowgreen;
+            width: 100px;
+        }
+
+        .main {
+            background-color: gray;
+            width: 400px;
+        }
+    </style>
+
+</head>
+
+<body>
+	<div class="wrap">
+		<div class="navi">
+			<p>左邊</p>
+			<p>左邊</p>
+			<p>width:100px</p>
+		</div>
+		<div class="main">
+			<p>.fix-float {display: block ; clear: both;}</p>
+			<p>右邊</p>
+			<p>width:400px</p>
+			<p>右邊</p>
+			<p>右邊</p>
+			<p>== v add in parent v ==</p>
+			<p>&lt;span class="fix-float"&gt;&lt;/span&gt;</p>
+      <p>==== add in parent ====</p>
+		</div>
+		<span class="fix-float"></span>
+	</div>
+</body>
+
+</html>
