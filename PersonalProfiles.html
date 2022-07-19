@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="zh-Hant-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PersonalProfiles</title>
+</head>
+<style>
+    body{
+        background-color:#000;
+        display: flex;
+        justify-content: center;
+        }
+    .container{
+        border:solid 1px rgb(96, 178, 255);
+        padding:15px;
+        background-color:rgb(161, 210, 255);
+    }
+    fieldset{
+        background-color:rgb(170, 190, 255);
+    }
+    fieldset+fieldset{margin-top: 15px;}
+    input{float:right}
+    .sex{
+        float:none;
+        margin-left: 30px;
+    }
+    .btn-inner{
+        margin-top: 15px;
+        display:flex;
+        justify-content:space-evenly;
+        }
+    .btn{
+        width:80px;
+        }
+    #id{
+        float:right;
+        margin-top: -5px;}
+</style>
+<body>
+    <div class="container">
+        <p id="id">ID:407180221</p>
+        <h2>PersonalProfiles</h2> 
+        <fieldset>
+            <legend>Basic</legend>
+            <p>Name:<input type="text" name="name" value="喬俊杰" maxlength="20" size="45" readonly/>
+            </p>
+            <p>Phone:<input type="text" name="phone" value="0987654321" maxlength="20" size="45" readonly/>
+            </p>
+            <p>Address:<input type="text" name="address" value="新莊區中正路510號" maxlength="20" size="45" readonly/>
+            </p>
+            <p id="gender">Gender:
+                <input class="sex" type="radio" name="sex" value="male" checked />
+                Male
+                <input class="sex "type="radio" name="sex" value="female"/>
+                Female
+            </p>
+            
+        </fieldset>
+        <fieldset>
+            <legend>Advance</legend>
+            <p>Skill:<input type="text" name="skill" value="Python Html CSS Javascript" maxlength="20" size="45" readonly/>
+            </p>
+            <p>Favorite:<input type="text" name="favorite" value="Baseball" maxlength="20" size="45" readonly/>
+            </p>
+        </fieldset>
+        <fieldset>
+            <legend>Biography</legend>
+            <textarea name="biography" cols="50" rows="10"></textarea>
+        </fieldset>
+        <div class="btn-inner">
+            <button class="btn"  name="send">Send</button>
+            <button class="btn"  name="clear">Clear</button>
+        </div>
+    </div>
+</body>
+</html>
